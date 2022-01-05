@@ -1,32 +1,14 @@
-import {Navbar, SpaceBetween, StyledHome} from "./style";
-import {Link} from "react-router-dom";
-import {SiteLogo} from "../../assets/icons";
-import {ContainerXL, ContainerXS} from "../../assets/styles";
-import {FiMoreVertical} from "react-icons/fi";
+import { StyledHome} from "./style";
+import {ContainerXL} from "../../assets/styles";
+import Header from "../../containers/Header";
+import Banner from "../../containers/Banner";
 
 const Home = () => {
     return (
         <StyledHome>
             <ContainerXL>
-                <ContainerXS>
-                    <SpaceBetween>
-                        <SpaceBetween style={{width: "50%"}}>
-                            <Link to={'/'}>
-                                <SiteLogo/>
-                            </Link>
-                            <Navbar>
-                                <SpaceBetween>
-                                    <Link to={'/'}>Как это работает</Link>
-                                    <Link to={'/'}>Возможности</Link>
-                                    <Link to={'/'}>Тарифы</Link>
-                                    <button>
-                                        <FiMoreVertical />
-                                    </button>
-                                </SpaceBetween>
-                            </Navbar>
-                        </SpaceBetween>
-                    </SpaceBetween>
-                </ContainerXS>
+               <Header />
+                <Banner />
             </ContainerXL>
         </StyledHome>
     )

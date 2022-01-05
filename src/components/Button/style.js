@@ -7,11 +7,13 @@ export const StyledButton = styled.button`
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
+  cursor: pointer;
   padding: 12px 27px;
   line-height: 20px;
   border: none;
   color: #FFFFFF;
   position: relative;
+
   &:before {
     content: "";
     left: 5px;

@@ -14,3 +14,6 @@ export const ContainerXS = styled.div`
   padding: 0 15px;
   box-sizing: border-box;
 `;
+export const W50 = styled.div`
+  width: 50%;
+`;
