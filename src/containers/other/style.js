@@ -5,6 +5,9 @@ background: #FFECE6;
 border-radius: 50px;
 padding: 150px;
 margin-top: 150px;
+&.noMargin {
+    margin-top: 0;
+}
 `
 export const OtherBlockInner = styled.div`
 .title-other {
