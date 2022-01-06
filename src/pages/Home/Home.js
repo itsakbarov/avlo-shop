@@ -1,14 +1,16 @@
-import { StyledHome} from "./style";
+import {StyledHome} from "./style";
 import {ContainerXL} from "../../assets/styles";
 import Header from "../../containers/Header";
 import Banner from "../../containers/Banner";
+import Steps from "../../containers/Steps";
 
 const Home = () => {
     return (
         <StyledHome>
             <ContainerXL>
-               <Header />
-                <Banner />
+                <Header/>
+                <Banner/>
+                <Steps/>
             </ContainerXL>
         </StyledHome>
     )
