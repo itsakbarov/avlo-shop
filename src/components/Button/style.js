@@ -13,9 +13,20 @@ export const StyledButton = styled.button`
   border: none;
   color: #FFFFFF;
   position: relative;
+  transition: all ease 0.3s;
+
+  &:active {
+    transform: translate(5px, 6px);
+
+    &:before {
+      bottom: 0;
+      left: 0;
+    }
+  }
 
   &:before {
     content: "";
+    transition: all ease 0.3s;
     left: 5px;
     bottom: -6px;
     position: absolute;
@@ -25,5 +36,11 @@ export const StyledButton = styled.button`
     border-radius: 5px;
     width: 100%;
     height: 100%;
+  }
+    &.black-btn {
+      background:black !important;
+      &:before {
+          border: 3px solid #000;
+      }
   }
 `

@@ -4,7 +4,7 @@ import { RateCardBottom } from './style';
 import { RateCardBottomInner } from './style';
 import { RateCard } from './style';
 
-const Rate = ({title, extraText, description,clasRate, extraTextMini}) => {
+const Rate = ({title, extraText, description,clasRate, extraTextMini,classBlackBtn}) => {
     return ( 
         <RateCard>
             <RateCardTop className={clasRate}>
@@ -13,7 +13,7 @@ const Rate = ({title, extraText, description,clasRate, extraTextMini}) => {
             <RateCardBottom className={clasRate}>
             <p className="rate-card-description">{description}</p>
                 <RateCardBottomInner>
-                    <Button>Выбрать Старт</Button>
+                    <Button className={classBlackBtn}>Выбрать Старт</Button>
                     <a href="" className="rate-card-link">Подробнее...</a>
                 </RateCardBottomInner>
             </RateCardBottom>

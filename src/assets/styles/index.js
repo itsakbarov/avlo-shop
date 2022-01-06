@@ -8,7 +8,7 @@ export const ContainerXL = styled.div`
   box-sizing: border-box;
 `;
 export const ContainerXS = styled.div`
-  max-width: 1140px;
+  max-width: 1180px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;

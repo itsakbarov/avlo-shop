@@ -26,3 +26,9 @@ export const Text = styled.h3`
   margin-bottom: 52px;
   color: #000000;
 `
+
+export const ArrowHolder = styled.div`
+  position: absolute;
+  bottom: -49%;
+  left: -34%;
+`

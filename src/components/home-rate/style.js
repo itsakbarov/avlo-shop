@@ -42,7 +42,8 @@ export const RateCardTop = styled.div`
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    color: fff;
+    color: #fff;
+    margin-bottom: 8px;
   }
 `;
 export const RateCardBottom = styled.div`
@@ -56,6 +57,8 @@ export const RateCardBottom = styled.div`
   &.rate-red {
     border: 4px solid red;
   }
+
+  
 `;
 
 export const RateCardBottomInner = styled.div`
@@ -70,5 +73,12 @@ export const RateCardBottomInner = styled.div`
     line-height: 22px;
     text-decoration: none;
     color: #ff3d00;
+  }
+
+  .black-btn {
+      background:black !important;
+      &:before {
+          border: 3px solid #000;
+      }
   }
 `;

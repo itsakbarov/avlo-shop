@@ -9,13 +9,16 @@ import { DarkBlock } from "./style";
 import Rate from "../../components/home-rate/rate";
 import { RateDiv } from "./style";
 import { RateBlock } from "./style";
+import Steps from "../../containers/Steps";
+import RightNowBlock from "../../containers/home-right-now/rightNow";
 
 const Home = () => {
     return (
         <StyledHome>
             <ContainerXL>
-               <Header />
-                <Banner />
+                <Header/>
+                <Banner/>
+                <Steps/>
             </ContainerXL>
             <ContainerXS>
                 <HomeServices/>
@@ -39,6 +42,7 @@ const Home = () => {
                                 title={'Старт'}
                                 extraText={'Бесплатно'}
                                 description={'Отличная возможность для тестирования платформы и быстрого старта онлайн-продаж. Доступны все основные инструменты'}
+                                classBlackBtn={'black-btn'}
                             />
                             <Rate
                                 title={'Business'}
@@ -50,6 +54,9 @@ const Home = () => {
                         </RateBlock>
                 </RateDiv>
             </ContainerXS>
+            <ContainerXL>
+                <RightNowBlock/>
+            </ContainerXL>
         </StyledHome>
     )
 }
