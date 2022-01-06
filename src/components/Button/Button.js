@@ -1,8 +1,8 @@
-import {StyledButton} from "./style";
+import { StyledButton } from "./style";
 
-const Button = ({children}) => {
+const Button = ({ children, className }) => {
     return (
-        <StyledButton>
+        <StyledButton className={className}>
             {children}
         </StyledButton>
     )
