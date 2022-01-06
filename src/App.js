@@ -1,11 +1,13 @@
-import Button from "./components/Button/Button";
 import Home from "./pages/Home";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Contact from "./pages/Contact";
 
 function App() {
     return (
-        <div className="App">
-            <Home/>
-        </div>
+            <Routes>
+                <Route path={'/'} exact={true} element={<Home/>}/>
+                <Route path={'/contact'} exact={true} element={<Contact/>}/>
+            </Routes>
     );
 }
 
