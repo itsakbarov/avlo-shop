@@ -16,7 +16,6 @@ const Home = () => {
     return (
         <StyledHome>
             <ContainerXL>
-                <Header/>
                 <Banner/>
                 <Steps/>
             </ContainerXL>
@@ -32,7 +31,11 @@ const Home = () => {
                 </DarkBlock>
             </ContainerXS>
             <ContainerXL>
-                <Other/>
+                <Other
+                    title={'Другие '}
+                    extraTitle={'возможности'}
+                    twoTitle={'конструктора'}
+                />
             </ContainerXL>
             <ContainerXS>
                 <RateDiv>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledBanner = styled.div`
   background: #FFECE6;
   border-radius: 50px;
+  margin-bottom: 150px;
 `
 export const Title = styled.h1`
   font-family: Gilroy;
