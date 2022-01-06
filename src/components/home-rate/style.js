@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import YesList from '../../assets/icons/rate_list_icon.svg'
+import NoList from '../../assets/icons/rate_dis_list.svg'
 export const RateCard = styled.div`
   width: 45%;
 `;
@@ -22,12 +23,11 @@ export const RateCardTop = styled.div`
     font-size: 50px;
     line-height: 60px;
     color: #ffffff;
-    
   }
 
   .span-block-rate {
-      display: flex;
-      align-items:flex-end;
+    display: flex;
+    align-items: flex-end;
   }
 
   .rate-card-span {
@@ -38,7 +38,7 @@ export const RateCardTop = styled.div`
   }
 
   .extraTextMini {
-      font-style: normal;
+    font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -57,8 +57,6 @@ export const RateCardBottom = styled.div`
   &.rate-red {
     border: 4px solid red;
   }
-
-  
 `;
 
 export const RateCardBottomInner = styled.div`
@@ -76,9 +74,46 @@ export const RateCardBottomInner = styled.div`
   }
 
   .black-btn {
-      background:black !important;
-      &:before {
-          border: 3px solid #000;
+    background: black !important;
+    &:before {
+      border: 3px solid #000;
+    }
+  }
+`;
+
+export const RateListBlock = styled.div`
+  
+
+  .rate_list {
+    position: relative;
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    color: #000000;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 25px;
+      height: 25px;
+      background-image: url(${YesList});
+      background-repeat: no-repeat;
+      margin: auto;
+      background-size: contain;
+      left: -40px;
+    }
+    &.none {
+      display:none;
+    }
+    &.disabled {
+      opacity:0.4;
+      &::before {
+        background-image: url(${NoList});
       }
+    }
   }
 `;

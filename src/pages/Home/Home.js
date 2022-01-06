@@ -43,6 +43,7 @@ const Home = () => {
                                 extraText={'Бесплатно'}
                                 description={'Отличная возможность для тестирования платформы и быстрого старта онлайн-продаж. Доступны все основные инструменты'}
                                 classBlackBtn={'black-btn'}
+                                classes={'none'}
                             />
                             <Rate
                                 title={'Business'}
@@ -50,6 +51,7 @@ const Home = () => {
                                 description={'Отличная возможность для тестирования платформы и быстрого старта онлайн-продаж. Доступны все основные инструменты'}
                                 clasRate={'rate-red'}
                                 extraTextMini={'в МЕСЯЦ'}
+                                classes={'none'}
                             />
                         </RateBlock>
                 </RateDiv>
