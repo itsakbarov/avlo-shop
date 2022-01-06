@@ -4,6 +4,7 @@ const Contact = () => {
     return (
         <Wrapper>
 
+
         </Wrapper>
     )
 }
