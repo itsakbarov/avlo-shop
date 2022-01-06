@@ -11,39 +11,50 @@ import Ic5 from '../../assets/icons/ic5.svg'
 import Ic6 from '../../assets/icons/ic6.svg'
 
 
-const Other = () => {
+const Other = ({ title, extraTitle, twoTitle, description, classes, noMargin}) => {
     return ( 
-        <OtherBlock>
+        <OtherBlock className={`${noMargin}`}>
         <ContainerXS>
         <OtherBlockInner>
             <h2 className="title-other">
-            Другие <span className="span-other">возможности</span> конструктора 
-            </h2>
+            {title} <span className="span-other">{extraTitle}</span> {twoTitle} </h2>
 
             <OtherBlockCardBlock>
                 <OtherCard
                             img={Arrow}
                             title={'Встроенные инструменты маркетинга'}
+                            description={description}
+                            classes={classes}
                 />
                 <OtherCard
                     img={Ic2}
                     title={`Помощь в продвижении  бизнеса`}
+                            description={description}
+                            classes={classes}
                 />
                 <OtherCard
                     img={Ic3}
                     title={`Возможность подключить свой домен`}
+                            description={description}
+                            classes={classes}
                 />
                 <OtherCard
                     img={Ic4}
                     title={`Адаптивный дизайн для всех  устройств`}
+                            description={description}
+                            classes={classes}
                 />
                 <OtherCard
                     img={Ic5}
                     title={`Глубокая  аналитика для оптимизации бизнеса`}
+                            description={description}
+                            classes={classes}
                                    />
                 <OtherCard
                     img={Ic6}
                     title={`Безопасность персональных  данных`}
+                            description={description}
+                            classes={classes}
                 />
             </OtherBlockCardBlock>
         </OtherBlockInner>

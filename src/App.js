@@ -9,17 +9,17 @@ import Footer from "./containers/footer/footer";
 
 function App() {
     return (
-        <>
-            <Header/>
-            <Routes>
-                <Route path={'/'} exact={true} element={<Home/>}/>
-                <Route path={'/contact'} exact={true} element={<Contact/>}/>
-                <Route path={'/rate'} exact={true} element={<RatePage/>}/>
-                <Route path={'/opportunity'} exact={true} element={<Opportunity/>}/>
-                <Route path={'/usage'} exact={true} element={<Usage/>}/>
-            </Routes>
-            <Footer/>
-            </>
+      <>
+        <Header />
+        <Routes>
+          <Route path={"/"} exact={true} element={<Home />} />
+          <Route path={"/contact"} exact={true} element={<Contact />} />
+          <Route path={"/rate"} exact={true} element={<RatePage />} />
+          <Route path={"/opportunity"} exact={true} element={<Opportunity />} />
+          <Route path={"/usage"} exact={true} element={<Usage />} />
+        </Routes>
+        <Footer />
+      </>
     );
 }
 
