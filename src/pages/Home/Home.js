@@ -16,7 +16,6 @@ const Home = () => {
     return (
         <StyledHome>
             <ContainerXL>
-                <Header/>
                 <Banner/>
                 <Steps/>
             </ContainerXL>
