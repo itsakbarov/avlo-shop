@@ -24,7 +24,7 @@ const Steps = () => {
             case window.pageYOffset <= 1940:
                 image.current.src = FrameImage2
                 break;
-            case window.pageYOffset <= 2200:
+            case window.pageYOffset <= 2100:
                 image.current.src = FrameImage
                 break;
             case window.pageYOffset > 2100:

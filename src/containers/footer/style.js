@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const FooterBlock = styled.div`
   background: black;
   padding: 100px 0 46px 0;
+  margin-top: 150px;
 `;
 
 export const FooterBlockInner = styled.div``;

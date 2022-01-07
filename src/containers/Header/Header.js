@@ -7,36 +7,30 @@ import Button from "../../components/Button/Button";
 
 const Header = () => {
     return (
-        <ContainerXS style={{padding: '26px 0'}}>
-            <SpaceBetween>
-                <SpaceBetween style={{width: "55%"}}>
-                    <Link to={'/'}>
-                        <SiteLogo/>
-                    </Link>
-                    <Navbar>
-                        <SpaceBetween>
-                            <NavLink to={'/'}>Как это работает</NavLink>
-                            <NavLink to={'/'}>Возможности</NavLink>
-                            <NavLink to={'/'}>Тарифы</NavLink>
-                            <More>
-                                <FiMoreVertical/>
-                            </More>
-                        </SpaceBetween>
-                    </Navbar>
-                </SpaceBetween>
-                <SpaceBetween style={{width: "30%"}}>
-                    <Login to={'/login'}>
-                        Войти
-                    </Login>
-                    <Button>
-                        Создать магазин
-                    </Button>
-                    <Dropdown>
-                        Ru
-                    </Dropdown>
-                </SpaceBetween>
-            </SpaceBetween>
-        </ContainerXS>
-    )
+      <ContainerXS style={{ padding: "26px 0" }}>
+        <SpaceBetween>
+          <SpaceBetween style={{ width: "55%" }}>
+            <Link to={"/"}>
+              <SiteLogo />
+            </Link>
+            <Navbar>
+              <SpaceBetween>
+                <NavLink to={"/system"}>Как это работает</NavLink>
+                <NavLink to={"/opportunity"}>Возможности</NavLink>
+                <NavLink to={"/rate"}>Тарифы</NavLink>
+                <More>
+                  <FiMoreVertical />
+                </More>
+              </SpaceBetween>
+            </Navbar>
+          </SpaceBetween>
+          <SpaceBetween style={{ width: "30%" }}>
+            <Login to={"/login"}>Войти</Login>
+            <Button>Создать магазин</Button>
+            <Dropdown>Ru</Dropdown>
+          </SpaceBetween>
+        </SpaceBetween>
+      </ContainerXS>
+    );
 }
 export default Header
