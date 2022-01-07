@@ -15,7 +15,7 @@ const Header = () => {
                     </Link>
                     <Navbar>
                         <SpaceBetween>
-                            <NavLink to={'/'}>Как это работает</NavLink>
+                            <NavLink to={'/About'}>Как это работает</NavLink>
                             <NavLink to={'/'}>Возможности</NavLink>
                             <NavLink to={'/'}>Тарифы</NavLink>
                             <More>
