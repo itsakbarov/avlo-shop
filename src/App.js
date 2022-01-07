@@ -1,3 +1,4 @@
+import About from "./pages/About";
 import Home from "./pages/Home";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Contact from "./pages/Contact";
@@ -17,6 +18,7 @@ function App() {
           <Route path={"/rate"} exact={true} element={<RatePage />} />
           <Route path={"/opportunity"} exact={true} element={<Opportunity />} />
           <Route path={"/usage"} exact={true} element={<Usage />} />
+          <Route path={"/about"} exact={true} element={<About />} />
         </Routes>
         <Footer />
       </>

@@ -11,7 +11,6 @@ import { RateBlock } from "./style";
 import Steps from "../../containers/Steps";
 import RightNowBlock from "../../containers/home-right-now/rightNow";
 import Opportunities from "../../containers/Opportunities";
-
 const Home = () => {
   return (
     <StyledHome>
