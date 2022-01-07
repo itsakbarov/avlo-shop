@@ -37,4 +37,10 @@ export const StyledButton = styled.button`
     width: 100%;
     height: 100%;
   }
+    &.black-btn {
+      background:black !important;
+      &:before {
+          border: 3px solid #000;
+      }
+  }
 `

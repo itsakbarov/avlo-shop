@@ -2,10 +2,13 @@ import {ContainerXS, W50} from "../../assets/styles";
 import {SpaceBetween} from "../Header/style";
 import {ArrowHolder, StyledBanner, Text, Title} from "./style";
 import Button from "../../components/Button/Button";
-import Mac from '../../assets/images/MACBOOK.png'
 import {Arrow} from '../../assets/icons'
+import {useEffect, useState} from "react";
+import Background from '../../assets/images/Banner1.png'
 
 const Banner = () => {
+
+
     return (
         <StyledBanner>
             <ContainerXS>
@@ -18,11 +21,9 @@ const Banner = () => {
                             Создать магазин
                         </Button>
                     </W50>
-                    <W50 style={{position: "relative"}}>
-                        <img src={Mac} alt=""/>
-                        <ArrowHolder>
-                            <Arrow/>
-                        </ArrowHolder>
+                    <W50 style={{position: "absolute", right: 0}}>
+                        <img src={Background} alt=""/>
+
                     </W50>
                 </SpaceBetween>
             </ContainerXS>

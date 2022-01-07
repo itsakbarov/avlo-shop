@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import FrameImage from '../../assets/images/image 29.png'
 
 export const StyledSteps = styled.div``
 export const Content = styled.div`
   position: relative;
-
+  width: 50%;
 `
 export const Title = styled.h2`
   font-family: Gilroy;
@@ -12,6 +13,7 @@ export const Title = styled.h2`
   font-size: 70px;
   line-height: 70px;
   max-width: 354px;
+  margin-bottom: 84px;
 
   span {
     color: #FF3D00;
@@ -19,39 +21,15 @@ export const Title = styled.h2`
 
   color: #000000;
 `
-export const Card = styled.div`
-  max-width: 468px;
-  margin-bottom: 65px;
-`
-export const CardTitle = styled.h2`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
-  margin: 0;
-  margin-bottom: 16px;
-  font-size: 50px;
-  line-height: 70px;
-  color: #FF3D00;`
-export const CardText = styled.h4`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
-  margin: 0;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000000;
-  margin-bottom: 30px;
-`
-export const CardContent = styled.p`
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-`
+
 export const ArrowWrapper = styled.div`
-  right: 40%;
-  top: 0;
+  right: -25%;
+  top: 2%;
   position: absolute;`
+export const Sticky = styled.div`
+`
+export const Frame = styled.div`
+  img {
+    transition: all ease 0.3s;
+  }
+`
