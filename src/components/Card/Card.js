@@ -21,5 +21,6 @@ const Card = ({title}) => {
                 готов</CardContent>
         </StyledCard>
     )
+   
 }
 export default Card
