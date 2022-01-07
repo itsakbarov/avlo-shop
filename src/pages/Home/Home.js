@@ -1,5 +1,5 @@
 import { StyledHome } from "./style";
-import { ContainerXL, ContainerXS } from "../../assets/styles";
+import { ContainerXL } from "../../assets/styles";
 import Banner from "../../containers/Banner";
 import HomeServices from "../../containers/Header/homepage/homeServices";
 import Other from "../../containers/other/other";
